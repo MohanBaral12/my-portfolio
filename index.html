@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilanath Baral | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="navbar">
+      <div class="brand">Dilanath.</div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars nav-icon"></i>
+      </button>
+      <nav class="nav" id="site-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello it's Me</p>
+          <h1>Dilanath Baral</h1>
+          <h2>
+            And I'm a
+            <span class="role-switch" aria-label="App Developer and Software Developer">
+              <span class="role role-1">App Developer</span>
+              <span class="role role-2">Software Developer</span>
+            </span>
+          </h2>
+          <p class="hero-description">
+            I design and build modern apps, responsive websites, and software solutions
+            that solve real problems and create better digital experiences.
+          </p>
+
+          <div class="socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/mohanbaral12" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <img src="profile_rm_bg.jpg" alt="Portrait of Dilanath Baral" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-photo-wrap">
+          <div class="about-photo-ring">
+            <img src="profile_rm_bg.jpg" alt="Dilanath Baral portrait" />
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <h3>About</h3>
+          <p>
+            Hi, I'm Dilanath Baral, a Computer Engineering student from Nepal with a
+            strong interest in software and application development. I enjoy building
+            web applications and learning modern technologies such as Java, Spring Boot,
+            Python, Django, MySQL, and JavaScript.
+          </p>
+        </div>
+      </section>
+
+  <section id="skills" class="skills">
+    <div class="section-heading">
+      <p class="section-tag">Skills</p>
+      <h3>Technologies I Use</h3>
+    </div>
+
+    <div class="skills-marquee" aria-label="Skills carousel">
+      <div class="skills-track" id="skills-track"></div>
+    </div>
+  </section>
+
+  <!-- --------------Projects------------- -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+      <p class="section-tag">Projects</p>
+    </div>
+      <div class="project-list">
+        <div class="work">
+          <img src="tudo.png" alt="TUDO project preview" />
+          <div class="work-overlay">
+            <span class="project-tag">Productivity App</span>
+            <h3>TUDO</h3>
+            <p>A task management app built to simplify daily planning and productivity.</p>
+            <a href="https://github.com/MohanBaral12/todo" target="_blank" rel="noopener noreferrer"
+              class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="ems.png" alt="EMS project preview" />
+          <div class="work-overlay">
+            <span class="project-tag">Management System</span>
+            <h3>EMS</h3>
+            <p>An employee management system designed for efficient record handling and workflow.</p>
+            <a href="https://github.com/MohanBaral12" target="_blank" rel="noopener noreferrer" class="learn-more">Learn
+              More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="section-heading">
+      <p class="section-tag">Contact</p>
+      <h3>Let’s Work Together</h3>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>Email</span>
+            <a href="mailto:mohanbaral032@gmail.com">mohanbaral032@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span>Phone</span>
+            <a href="tel:+9779800000000">+977 9800000000</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span>Location</span>
+            <p>Nepal</p>
+          </div>
+        </div>
+
+        <a href="Dilnath_Baral_CV.pdf" class="cv-download" download>
+          <i class="fa-solid fa-download"></i>
+          Download CV
+        </a>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

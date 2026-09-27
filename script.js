@@ -32,6 +32,11 @@ if (skillsTrack) {
 
 
 // -------------------------nav-------------------------
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.getElementById('site-nav');
 
@@ -96,7 +101,7 @@ if (form) {
       body: new FormData(form)
     })
       .then(() => {
-        setStatus('Success! Details stored in Google Sheet.', 'success');
+        setStatus('Message sent successfully!', 'success');
         form.reset();
 
         setTimeout(() => {
@@ -113,12 +118,3 @@ if (form) {
       });
   });
 }
-
-
-
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbxEjTZHObrUbxRUQRhoKQip-MFAbilsDeyyc8qRycZB78YtLfz9uedw4wX9CfnpzqKc/exec';
-// const form = document.getElementById('contactForm');
-// fetch(scriptURL, {
-//       method: 'POST',
-//       body: new FormData(form)
-//     })

@@ -24,6 +24,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, #1a0507 0%, #180507 30%, #140406 100%);
   color: var(--text);
   font-family: "Poppins", sans-serif;
@@ -46,7 +48,14 @@ button {
 .page-shell {
   width: min(1180px, calc(100% - 90px));
   margin: 0 auto;
-  padding: 18px 0 60px;
+  padding: 18px 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .navbar {
@@ -734,8 +743,10 @@ button {
 }
 
 .site-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(18, 4, 5, 0.9);
+  background: linear-gradient(180deg, rgba(33, 8, 9, 0.96), rgba(18, 4, 5, 1));
   margin-top: 24px;
 }
 
@@ -747,6 +758,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
+  color: var(--text);
 }
 
 .footer-inner p {
